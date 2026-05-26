@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Premium Interactive Gallery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="background-blur"></div>
+
+    <div class="gallery-container">
+
+        <h1>
+            Creative Frontend Portfolio
+        </h1>
+
+        <p class="subtitle">
+            Interactive Image Gallery with Smooth Lightbox & Dynamic Filters
+        </p>
+
+        <div class="filter-wrapper">
+
+            <button class="filter-btn active" data-filter="all">
+                All Work
+            </button>
+
+            <button class="filter-btn" data-filter="tech">
+                Technology
+            </button>
+
+            <button class="filter-btn" data-filter="nature">
+                Nature
+            </button>
+
+            <button class="filter-btn" data-filter="travel">
+                Travel
+            </button>
+
+        </div>
+
+        <div class="image-grid">
+
+            <div class="gallery-item" data-category="tech">
+
+                <img src="images/img1.jpg" alt="Workspace">
+
+                <div class="item-overlay">
+
+                    <span>Workspace Setup</span>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+
+                <img src="images/img2.jpg" alt="Forest">
+
+                <div class="item-overlay">
+
+                    <span>Forest Drone Shot</span>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" data-category="tech">
+
+                <img src="images/img3.jpg" alt="Architecture">
+
+                <div class="item-overlay">
+
+                    <span>Modern Architecture</span>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+
+                <img src="images/img4.jpg" alt="Nature">
+
+                <div class="item-overlay">
+
+                    <span>Minimalist Nature</span>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" data-category="travel">
+
+                <img src="images/img5.jpg" alt="Travel">
+
+                <div class="item-overlay">
+
+                    <span>Mountain Adventure</span>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item" data-category="travel">
+
+                <img src="images/img6.jpg" alt="City">
+
+                <div class="item-overlay">
+
+                    <span>Night City Lights</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="lightbox" id="lightbox">
+
+        <span class="close-btn">
+            &times;
+        </span>
+
+        <button class="nav-btn prev-btn">
+            &#10094;
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightbox-img" src="" alt="Preview">
+
+            <p id="lightbox-caption"></p>
+
+        </div>
+
+        <button class="nav-btn next-btn">
+            &#10095;
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
